@@ -1,0 +1,625 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Brasa Nocturna — Alta Gastronomia no Fogo &amp; Coquetelaria Autoral</title>
+  <meta name="description" content="Experiência gastronómica contemporânea na brasa, ingredientes sazonais selecionados e coquetelaria de assinatura em ambiente intimista." />
+  
+  <!-- Google Fonts: Plus Jakarta Sans, Cormorant Garamond & JetBrains Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,600;0,700;1,600&family=JetBrains+Mono:wght@400;500&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <!-- Ambient Glows -->
+  <div class="ambient-bg" aria-hidden="true"></div>
+
+  <!-- Fixed Navbar -->
+  <header class="navbar" id="navbar">
+    <div class="container navbar__inner">
+      <a href="#" class="navbar__brand" aria-label="Brasa Nocturna Início">
+        <svg class="brand-logo" width="26" height="26" viewBox="0 0 28 28" fill="none">
+          <path d="M14 3C14 3 21 9.5 21 16C21 19.866 17.866 23 14 23C10.134 23 7 19.866 7 16C7 13.2 8.6 10.6 10.5 8.8C10.5 11.2 12 12.5 13.5 12.5C12.5 9.5 14 3 14 3Z" stroke="url(#emberGrad)" stroke-width="1.8" fill="rgba(245, 158, 11, 0.16)"/>
+          <circle cx="14" cy="17.5" r="2.2" fill="#FBBF24"/>
+          <defs>
+            <linearGradient id="emberGrad" x1="7" y1="3" x2="21" y2="23" gradientUnits="userSpaceOnUse">
+              <stop stop-color="#FBBF24"/>
+              <stop offset="1" stop-color="#EA580C"/>
+            </linearGradient>
+          </defs>
+        </svg>
+        <span class="brand-name">Brasa Nocturna</span>
+      </a>
+
+      <nav class="navbar__nav" aria-label="Navegação Principal">
+        <ul class="nav-list">
+          <li><a href="#cardapio" class="nav-link">Cardápio</a></li>
+          <li><a href="#filosofia" class="nav-link">O Fogo</a></li>
+          <li><a href="#adega" class="nav-link">Coquetelaria</a></li>
+          <li><a href="#experiencia" class="nav-link">O Salão</a></li>
+          <li><a href="#avaliacoes" class="nav-link">Críticas</a></li>
+        </ul>
+      </nav>
+
+      <div class="navbar__actions">
+        <a href="#cardapio" class="btn btn--ghost btn--sm">Menu Degustação</a>
+        <a href="#reservas" class="btn btn--primary btn--sm">Reservar Mesa</a>
+        <button class="mobile-toggle" id="mobileToggle" aria-label="Abrir Menu" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Drawer -->
+    <div class="mobile-menu" id="mobileMenu">
+      <ul class="mobile-menu__list">
+        <li><a href="#cardapio" class="mobile-link">Cardápio</a></li>
+        <li><a href="#filosofia" class="mobile-link">O Fogo</a></li>
+        <li><a href="#adega" class="mobile-link">Coquetelaria</a></li>
+        <li><a href="#experiencia" class="mobile-link">O Salão</a></li>
+        <li><a href="#avaliacoes" class="mobile-link">Críticas</a></li>
+      </ul>
+      <div class="mobile-menu__actions">
+        <a href="#cardapio" class="btn btn--secondary btn--full">Ver Cardápio</a>
+        <a href="#reservas" class="btn btn--primary btn--full">Reservar Mesa</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO SECTION -->
+    <section class="hero" id="hero">
+      <div class="container hero__grid">
+        <div class="hero__content">
+          <div class="badge hero-stagger">
+            <span class="badge__dot"></span>
+            <span>TEMPORADA DE OUTONO • MENU DEGUSTAÇÃO 7 TEMPOS</span>
+          </div>
+          <h1 class="hero__title hero-stagger">
+            Gastronomia contemporânea forjada na brasa viva
+          </h1>
+          <p class="hero__subtitle hero-stagger">
+            Ingredientes sazonais de pequenos produtores, maturação artesanal e técnicas ancestrais de fogo em uma atmosfera íntima e sensorial.
+          </p>
+          <div class="hero__cta hero-stagger">
+            <a href="#reservas" class="btn btn--primary btn--lg">
+              <span>Reservar experiência</span>
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3.33 8H12.67M12.67 8L8.67 4M12.67 8L8.67 12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </a>
+            <a href="#cardapio" class="btn btn--secondary btn--lg">Explorar cardápio</a>
+          </div>
+        </div>
+
+        <!-- Architectural Ember & Table Visual -->
+        <div class="hero__visual hero-visual-anim">
+          <div class="iso-stage">
+            <div class="iso-glow"></div>
+            <svg class="iso-svg" viewBox="0 0 540 420" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <!-- Isometric Dining & Hearth Stage -->
+              <g class="iso-grid" opacity="0.55">
+                <path d="M270 50L490 177L270 304L50 177L270 50Z" fill="url(#hearthPlate)" stroke="#78350F" stroke-width="1.5"/>
+                <path d="M160 113.5L380 240.5M380 113.5L160 240.5M215 81.75L435 208.75M105 145.25L325 272.25M325 81.75L105 208.75M435 145.25L215 272.25" stroke="#291D18" stroke-width="1"/>
+              </g>
+
+              <!-- Warm Heat Streams -->
+              <path class="data-stream" d="M185 155L270 177L355 155" stroke="#F59E0B" stroke-width="1.8" stroke-dasharray="4 4"/>
+              <path class="data-stream" d="M185 205L270 177L355 205" stroke="#EA580C" stroke-width="1.8" stroke-dasharray="4 4"/>
+
+              <!-- Satellite Node: Top Left (Ingredientes Orgânicos) -->
+              <g class="iso-node float-node-1">
+                <path d="M175 130L215 153L175 176L135 153L175 130Z" fill="#1C1412" stroke="#FBBF24" stroke-width="1.5"/>
+                <circle cx="175" cy="153" r="10" fill="#FBBF24" fill-opacity="0.22"/>
+                <circle cx="175" cy="153" r="4" fill="#FBBF24"/>
+              </g>
+
+              <!-- Satellite Node: Top Right (Adega & Coquetéis) -->
+              <g class="iso-node float-node-2">
+                <path d="M365 130L405 153L365 176L325 153L365 130Z" fill="#1C1412" stroke="#FB7185" stroke-width="1.5"/>
+                <circle cx="365" cy="153" r="10" fill="#FB7185" fill-opacity="0.22"/>
+                <circle cx="365" cy="153" r="4" fill="#FB7185"/>
+              </g>
+
+              <!-- Satellite Node: Bottom Left (Maturação Dry-Aged) -->
+              <g class="iso-node float-node-2">
+                <path d="M175 195L215 218L175 241L135 218L175 195Z" fill="#1C1412" stroke="#F97316" stroke-width="1.5"/>
+                <circle cx="175" cy="218" r="10" fill="#F97316" fill-opacity="0.22"/>
+                <circle cx="175" cy="218" r="4" fill="#F97316"/>
+              </g>
+
+              <!-- Satellite Node: Bottom Right (Fermentação Natural) -->
+              <g class="iso-node float-node-1">
+                <path d="M365 195L405 218L365 241L325 218L365 195Z" fill="#1C1412" stroke="#34D399" stroke-width="1.5"/>
+                <circle cx="365" cy="218" r="10" fill="#34D399" fill-opacity="0.22"/>
+                <circle cx="365" cy="218" r="4" fill="#34D399"/>
+              </g>
+
+              <!-- Center Hearth Core (A Brasa Central) -->
+              <g class="iso-core float-core">
+                <path d="M270 132L330 167L270 202L210 167L270 132Z" fill="#291811" stroke="#F59E0B" stroke-width="2"/>
+                <path d="M270 116L315 142L270 168L225 142L270 116Z" fill="url(#emberCoreGrad)" stroke="#FDE68A" stroke-width="1.5"/>
+                <circle cx="270" cy="142" r="14" fill="#FEF3C7" fill-opacity="0.2"/>
+                <circle cx="270" cy="142" r="6" fill="#FFFBEB"/>
+              </g>
+
+              <defs>
+                <linearGradient id="hearthPlate" x1="50" y1="50" x2="490" y2="304" gradientUnits="userSpaceOnUse">
+                  <stop stop-color="#1E1614"/>
+                  <stop offset="1" stop-color="#0E0B0A"/>
+                </linearGradient>
+                <linearGradient id="emberCoreGrad" x1="225" y1="116" x2="315" y2="168" gradientUnits="userSpaceOnUse">
+                  <stop stop-color="#F59E0B"/>
+                  <stop offset="1" stop-color="#DC2626"/>
+                </linearGradient>
+              </defs>
+            </svg>
+          </div>
+        </div>
+      </div>
+
+      <!-- Recognition & Guides Bar -->
+      <div class="container logo-cloud reveal-up">
+        <p class="logo-cloud__label">Reconhecimentos &amp; Guias Gastronómicos</p>
+        <div class="logo-cloud__grid">
+          <div class="brand-item">Guia Michelin • Recomendado</div>
+          <div class="brand-item">50 Best Discovery</div>
+          <div class="brand-item">Veja Comer &amp; Beber</div>
+          <div class="brand-item">Prazeres da Mesa</div>
+          <div class="brand-item">Wine Spectator Award</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- INTERACTIVE MENU SHOWCASE -->
+    <section class="section showcase" id="cardapio">
+      <div class="container">
+        <div class="section-header reveal-up">
+          <h2 class="section-title">Um cardápio guiado pelas estações</h2>
+          <p class="section-desc">
+            Cada prato nasce do diálogo direto entre o calor da lenha de laranjeira, a frescura da colheita do dia e o tempo de maturação.
+          </p>
+        </div>
+
+        <!-- Interactive 3-Column Menu Category Tabs -->
+        <div class="showcase-tabs reveal-up" role="tablist">
+          <button class="tab-card active" data-tab="0" role="tab" aria-selected="true">
+            <div class="tab-card__icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2c0 0 6 5.5 6 11a6 6 0 1 1-12 0c0-2.5 1.5-4.8 3.2-6.5 0 2.2 1.3 3.3 2.8 3.3-.8-2.5 0-7.8 0-7.8z"/></svg>
+            </div>
+            <h3 class="tab-card__title">Direto da Brasa</h3>
+            <p class="tab-card__text">Cortes maturados a seco, frutos do mar na grelha e vegetais tostados no carvão vegetal.</p>
+          </button>
+
+          <button class="tab-card" data-tab="1" role="tab" aria-selected="false">
+            <div class="tab-card__icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M8 22h8M12 15v7M19 3H5l7 12 7-12z"/></svg>
+            </div>
+            <h3 class="tab-card__title">Coquetelaria Autoral</h3>
+            <p class="tab-card__text">Infusões defumadas, destilados botânicos brasileiros e reduções de frutas nativas.</p>
+          </button>
+
+          <button class="tab-card" data-tab="2" role="tab" aria-selected="false">
+            <div class="tab-card__icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg>
+            </div>
+            <h3 class="tab-card__title">Menu Degustação</h3>
+            <p class="tab-card__text">Percurso completo em 7 tempos com harmonização opcional de vinhos de baixa intervenção.</p>
+          </button>
+        </div>
+
+        <!-- Luminous Menu Board Frame -->
+        <div class="showcase-frame reveal-up">
+          <div class="app-window">
+            <div class="app-window__bar">
+              <div class="window-dots">
+                <span></span><span></span><span></span>
+              </div>
+              <div class="window-url">Cardápio da Noite • Chef Henrique Vasconcelos</div>
+              <div class="window-badge">Ingredientes Frescos • Hoje</div>
+            </div>
+
+            <div class="app-window__body">
+              <aside class="app-sidebar">
+                <div class="sidebar-group">
+                  <span class="sidebar-label">SERVIÇOS DA CASA</span>
+                  <div class="sidebar-item active">
+                    <span class="dot dot--amber"></span> Jantar à La Carte
+                  </div>
+                  <div class="sidebar-item">
+                    <span class="dot dot--orange"></span> Degustação 7 Tempos
+                  </div>
+                </div>
+                <div class="sidebar-group">
+                  <span class="sidebar-label">HARMONIZAÇÃO</span>
+                  <div class="sidebar-item">
+                    <span class="dot dot--rose"></span> Vinhos Naturais
+                  </div>
+                  <div class="sidebar-item">
+                    <span class="dot dot--green"></span> Elixires Sem Álcool
+                  </div>
+                  <div class="sidebar-item">
+                    <span class="dot dot--gold"></span> Destilados Envelhecidos
+                  </div>
+                </div>
+              </aside>
+
+              <div class="app-content" id="showcaseContent">
+                <div class="app-content__header">
+                  <div>
+                    <h4>Principais &amp; Grelha de Lenha</h4>
+                    <p>Preparados na parrilla aberta a 380 °C</p>
+                  </div>
+                  <span class="status-pill">Menu de Outono</span>
+                </div>
+                <div class="token-table">
+                  <div class="token-row">
+                    <span class="dish-num">01</span>
+                    <div>
+                      <strong>Ancho Dry-Aged 45 Dias</strong>
+                      <span class="dish-sub">Tutano assado, emulsão de alho negro e farofa de brioche</span>
+                    </div>
+                    <span class="token-val">R$ 168</span>
+                    <span class="token-tag">Assinatura</span>
+                  </div>
+                  <div class="token-row">
+                    <span class="dish-num">02</span>
+                    <div>
+                      <strong>Polvo na Brasa de Laranjeira</strong>
+                      <span class="dish-sub">Mousseline de mandioquinha defumada, azeite de páprica e crisp de couve</span>
+                    </div>
+                    <span class="token-val">R$ 144</span>
+                    <span class="token-tag">Sem Glúten</span>
+                  </div>
+                  <div class="token-row">
+                    <span class="dish-num">03</span>
+                    <div>
+                      <strong>Couve-Flor Tostada Inteiramente</strong>
+                      <span class="dish-sub">Tahine de castanha-do-pará, romã fresca e ervas da horta</span>
+                    </div>
+                    <span class="token-val">R$ 96</span>
+                    <span class="token-tag">Vegetariano</span>
+                  </div>
+                  <div class="token-row">
+                    <span class="dish-num">04</span>
+                    <div>
+                      <strong>Pato Laqueado no Mel de Jataí</strong>
+                      <span class="dish-sub">Demi-glace de tucupi preto e cenouras glaceadas na brasa</span>
+                    </div>
+                    <span class="token-val">R$ 156</span>
+                    <span class="token-tag">Sazonal</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PILLAR 1: O FOGO E A ORIGEM -->
+    <section class="section pillar" id="filosofia">
+      <div class="container">
+        <div class="pillar-header reveal-up">
+          <div class="pillar-icon pillar-icon--amber">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2c0 0 6 5.5 6 11a6 6 0 1 1-12 0c0-2.5 1.5-4.8 3.2-6.5 0 2.2 1.3 3.3 2.8 3.3-.8-2.5 0-7.8 0-7.8z"/></svg>
+          </div>
+          <span class="pillar-eyebrow">O FOGO &amp; A ORIGEM</span>
+          <h2 class="section-title">Respeito absoluto ao tempo e ao produtor local</h2>
+          <p class="section-desc">Trabalhamos sem intermediários com fazendas agroecológicas, pescadores artesanais e lenhas de poda certificada.</p>
+        </div>
+
+        <!-- 6 Micro-Features Grid -->
+        <div class="micro-grid reveal-up">
+          <div class="micro-item">
+            <h4>Lenha de Frutíferas</h4>
+            <p>Laranjeira, macieira e jabuticabeira conferem notas aromáticas únicas a cada cocção.</p>
+          </div>
+          <div class="micro-item">
+            <h4>Câmara Dry-Aged</h4>
+            <p>Maturação controlada entre 30 e 60 dias para concentração máxima de sabor e maciez.</p>
+          </div>
+          <div class="micro-item">
+            <h4>Pesca Sustentável</h4>
+            <p>Peixes e frutos do mar recebidos diariamente da costa paulista com rastreabilidade.</p>
+          </div>
+          <div class="micro-item">
+            <h4>Fermentação Própria</h4>
+            <p>Pães de levain assados no forno a lenha e missôs artesanais produzidos na casa.</p>
+          </div>
+          <div class="micro-item">
+            <h4>Horta Biodinâmica</h4>
+            <p>Pancs, brotos e flores comestíveis colhidos poucas horas antes da abertura do salão.</p>
+          </div>
+          <div class="micro-item">
+            <h4>Desperdício Zero</h4>
+            <p>Aproveitamento integral de insumos em caldos, óleos infusionados e sais defumados.</p>
+          </div>
+        </div>
+
+        <!-- Bento Grid 1 -->
+        <div class="bento-grid bento-grid--pillar1">
+          <div class="bento-card reveal-up">
+            <div class="bento-card__meta">
+              <span class="bento-badge">CONTROLE TÉRMICO</span>
+              <h3>Zonas de calor da parrilla</h3>
+              <p>Seis níveis de altura permitem selar, defumar lentamente e finalizar com precisão cirúrgica.</p>
+            </div>
+            <div class="bento-visual swatch-matrix">
+              <div class="swatch-col">
+                <span style="background:#FEF3C7"></span>
+                <span style="background:#FCD34D"></span>
+                <span style="background:#F59E0B"></span>
+                <span style="background:#B45309"></span>
+                <span style="background:#78350F"></span>
+              </div>
+              <div class="swatch-col">
+                <span style="background:#FFEDD5"></span>
+                <span style="background:#FDBA74"></span>
+                <span style="background:#F97316"></span>
+                <span style="background:#C2410C"></span>
+                <span style="background:#7C2D12"></span>
+              </div>
+              <div class="swatch-col">
+                <span style="background:#FEE2E2"></span>
+                <span style="background:#FCA5A5"></span>
+                <span style="background:#EF4444"></span>
+                <span style="background:#B91C1C"></span>
+                <span style="background:#7F1D1D"></span>
+              </div>
+            </div>
+          </div>
+
+          <div class="bento-card bento-card--tall reveal-up">
+            <div class="bento-card__meta">
+              <span class="bento-badge">PERCURSO DEGUSTAÇÃO</span>
+              <h3>Sete tempos de outono</h3>
+              <p>Uma narrativa gastronómica desenhada para evoluir em intensidade e textura a cada prato.</p>
+            </div>
+            <div class="tasting-list">
+              <div class="tasting-step"><span>01</span> <strong>Ostra na Brasa</strong> — Granita de maçã verde e endro</div>
+              <div class="tasting-step"><span>02</span> <strong>Brioche Defumado</strong> — Manteiga noisette e flor de sal</div>
+              <div class="tasting-step"><span>03</span> <strong>Crudo de Olho-de-Boi</strong> — Leite de tigre de caju assado</div>
+              <div class="tasting-step"><span>04</span> <strong>Cogumelos Yanomami</strong> — Caldo dashi tostado e gema curada</div>
+              <div class="tasting-step"><span>05</span> <strong>Robalo Selvagem</strong> — Emulsão de moqueca na brasa</div>
+              <div class="tasting-step"><span>06</span> <strong>Wagyu A5 Grelhado</strong> — Purê de cebola caramelizada</div>
+              <div class="tasting-step"><span>07</span> <strong>Cacau 75% &amp; Fumaça</strong> — Sorvete de cumaru e nibs</div>
+            </div>
+          </div>
+
+          <div class="bento-card reveal-up">
+            <div class="bento-card__meta">
+              <span class="bento-badge">CHEF'S TABLE</span>
+              <h3>Balcão frente ao fogo</h3>
+              <p>Doze lugares exclusivos ao redor da cozinha aberta para acompanhar cada finalização de perto.</p>
+            </div>
+            <div class="bento-visual pulse-hub">
+              <div class="pulse-ring"></div>
+              <div class="pulse-core">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2"><path d="M12 2c0 0 6 5.5 6 11a6 6 0 1 1-12 0c0-2.5 1.5-4.8 3.2-6.5 0 2.2 1.3 3.3 2.8 3.3-.8-2.5 0-7.8 0-7.8z"/></svg>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Testimonial 1 -->
+        <blockquote class="single-quote reveal-up">
+          <p>“O Brasa Nocturna eleva o domínio do fogo a uma forma de arte silenciosa. O polvo na brasa de laranjeira é um dos pratos mais memoráveis da cidade.”</p>
+          <footer>
+            <span class="quote-avatar">M</span>
+            <div>
+              <strong>Mariana Albuquerque</strong>
+              <span>Crítica Gastronómica • Revista Sabores</span>
+            </div>
+          </footer>
+        </blockquote>
+      </div>
+    </section>
+
+    <!-- PILLAR 2: COQUETELARIA & ADEGA -->
+    <section class="section pillar pillar--rose" id="adega">
+      <div class="container">
+        <div class="pillar-header reveal-up">
+          <div class="pillar-icon pillar-icon--rose">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M8 22h8M12 15v7M19 3H5l7 12 7-12z"/></svg>
+          </div>
+          <span class="pillar-eyebrow pillar-eyebrow--rose">COQUETELARIA &amp; ADEGA</span>
+          <h2 class="section-title">Alquimia líquida e rótulos de terroir</h2>
+          <p class="section-desc">Nossa carta de bebidas dialoga com a fumaça da cozinha através de bitter artesanais, gelos cristalinos esculpidos à mão e mais de 280 rótulos.</p>
+        </div>
+
+        <!-- Bento Grid 2 -->
+        <div class="bento-grid bento-grid--pillar2">
+          <div class="bento-card bento-card--rose reveal-up">
+            <div class="bento-card__meta">
+              <span class="bento-badge bento-badge--rose">ASSINATURA DO BAR</span>
+              <h3>Coquetéis defumados na hora</h3>
+              <p>Clássicos revisitados com cachaças armazenadas em amburana, vermutes da casa e botânicos tostados.</p>
+            </div>
+            <div class="parser-pills">
+              <span>Negroni de Brasa • R$ 54</span>
+              <span>Old Fashioned Amburana • R$ 58</span>
+              <span>Sour de Cambuci • R$ 49</span>
+              <span>Boulevardier Defumado • R$ 56</span>
+            </div>
+          </div>
+
+          <div class="bento-card bento-card--rose reveal-up">
+            <div class="bento-card__meta">
+              <span class="bento-badge bento-badge--rose">ADEGA SUBTERRÂNEA</span>
+              <h3>Vinhos de mínima intervenção</h3>
+              <p>Curadoria focada em produtores biodinâmicos da América do Sul e do Velho Mundo.</p>
+            </div>
+            <div class="stack-badges">
+              <div class="stack-chip">Serra Gaúcha</div>
+              <div class="stack-chip">Vale de Uco</div>
+              <div class="stack-chip">Borgonha</div>
+              <div class="stack-chip">Douro</div>
+              <div class="stack-chip">Piemonte</div>
+              <div class="stack-chip">Biológicos</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PILLAR 3: O SALÃO & EXPERIÊNCIA -->
+    <section class="section pillar pillar--gold" id="experiencia">
+      <div class="container">
+        <div class="pillar-header reveal-up">
+          <div class="pillar-icon pillar-icon--gold">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+          </div>
+          <span class="pillar-eyebrow pillar-eyebrow--gold">O SALÃO &amp; HOSPITALIDADE</span>
+          <h2 class="section-title">Arquitetura sensorial para noites inesquecíveis</h2>
+          <p class="section-desc">Pedra basalto, madeira carbonizada (Shou Sugi Ban) e iluminação cênica pensada para valorizar cada detalhe à mesa.</p>
+        </div>
+
+        <div class="customers-grid" id="avaliacoes">
+          <article class="customer-card reveal-up">
+            <div class="customer-card__top">
+              <span class="customer-company">Salão Principal</span>
+              <span class="customer-tag">42 Lugares</span>
+            </div>
+            <p class="customer-card__quote">“Acústica impecável, iluminação acolhedora e serviço atento sem jamais ser invasivo. Perfeito para celebrações íntimas.”</p>
+            <div class="customer-card__author">
+              <strong>Ricardo Mendes</strong>
+              <span>Cliente Frequente</span>
+            </div>
+          </article>
+
+          <article class="customer-card reveal-up">
+            <div class="customer-card__top">
+              <span class="customer-company">Sala Privativa</span>
+              <span class="customer-tag">Até 14 Convidados</span>
+            </div>
+            <p class="customer-card__quote">“Realizamos nosso jantar executivo na sala da adega com menu personalizado pelo chef. Experiência irretocável do início ao fim.”</p>
+            <div class="customer-card__author">
+              <strong>Helena Bittencourt</strong>
+              <span>Diretora Criativa</span>
+            </div>
+          </article>
+
+          <article class="customer-card reveal-up">
+            <div class="customer-card__top">
+              <span class="customer-company">Balcão da Brasa</span>
+              <span class="customer-tag">12 Lugares</span>
+            </div>
+            <p class="customer-card__quote">“Sentar de frente para a grelha e conversar com a brigada enquanto os pratos são montados transforma o jantar em espetáculo.”</p>
+            <div class="customer-card__author">
+              <strong>Lucas Ferraz</strong>
+              <span>Arquiteto &amp; Gastrônomo</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- RESERVATION CTA & INTERACTIVE FORM -->
+    <section class="section cta-section" id="reservas">
+      <div class="container">
+        <div class="cta-banner reveal-up">
+          <h2>Reserve sua mesa no Brasa Nocturna</h2>
+          <p>Terça a Sábado, das 19h às 23h30. Domingos para almoço especial das 12h30 às 16h30.</p>
+          
+          <form class="reservation-form" id="reservationForm">
+            <div class="form-group">
+              <label for="resDate">Data</label>
+              <input type="date" id="resDate" required />
+            </div>
+            <div class="form-group">
+              <label for="resTime">Horário</label>
+              <select id="resTime">
+                <option value="19:30">19:30 — Primeiro Turno</option>
+                <option value="20:30" selected>20:30 — Horário Nobre</option>
+                <option value="21:45">21:45 — Segundo Turno</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="resGuests">Pessoas</label>
+              <select id="resGuests">
+                <option value="2">2 Pessoas</option>
+                <option value="4">4 Pessoas</option>
+                <option value="6">6 Pessoas</option>
+                <option value="8">Sala Privativa (8+)</option>
+              </select>
+            </div>
+            <button type="submit" class="btn btn--primary btn--lg">Confirmar Reserva</button>
+          </form>
+          <p class="form-feedback" id="formFeedback" aria-live="polite"></p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer__grid">
+      <div class="footer__brand">
+        <a href="#" class="navbar__brand">
+          <svg class="brand-logo" width="24" height="24" viewBox="0 0 28 28" fill="none">
+            <path d="M14 3C14 3 21 9.5 21 16C21 19.866 17.866 23 14 23C10.134 23 7 19.866 7 16C7 13.2 8.6 10.6 10.5 8.8C10.5 11.2 12 12.5 13.5 12.5C12.5 9.5 14 3 14 3Z" stroke="#FBBF24" stroke-width="1.8" fill="rgba(245, 158, 11, 0.16)"/>
+          </svg>
+          <span class="brand-name">Brasa Nocturna</span>
+        </a>
+        <p>Rua Bela Cintra, 1842 — Jardins, São Paulo • SP</p>
+      </div>
+
+      <div class="footer__col">
+        <h4>Gastronomia</h4>
+        <ul>
+          <li><a href="#cardapio">Menu à La Carte</a></li>
+          <li><a href="#filosofia">Degustação 7 Tempos</a></li>
+          <li><a href="#adega">Carta de Vinhos</a></li>
+          <li><a href="#adega">Coquetelaria</a></li>
+        </ul>
+      </div>
+
+      <div class="footer__col">
+        <h4>Horários</h4>
+        <ul>
+          <li><a href="#reservas">Ter – Qui: 19h às 23h</a></li>
+          <li><a href="#reservas">Sex – Sáb: 19h às 00h</a></li>
+          <li><a href="#reservas">Dom: 12h30 às 16h30</a></li>
+          <li><a href="#reservas">Seg: Fechado</a></li>
+        </ul>
+      </div>
+
+      <div class="footer__col">
+        <h4>Eventos</h4>
+        <ul>
+          <li><a href="#experiencia">Sala Privativa</a></li>
+          <li><a href="#experiencia">Jantares Corporativos</a></li>
+          <li><a href="#reservas">Vale-Presente <span class="hiring-badge">Novo</span></a></li>
+        </ul>
+      </div>
+
+      <div class="footer__col">
+        <h4>Contato</h4>
+        <ul>
+          <li><a href="tel:+551130448890">(11) 3044-8890</a></li>
+          <li><a href="mailto:reservas@brasanocturna.com.br">reservas@brasanocturna.com.br</a></li>
+          <li><a href="#">Valet na porta</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="container footer__bottom">
+      <p>&copy; 2026 Brasa Nocturna Gastronomia. Todos os direitos reservados.</p>
+      <div class="footer__socials">
+        <a href="#" aria-label="Instagram">Instagram</a>
+        <a href="#" aria-label="Google Maps">Como Chegar</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- GSAP & ScrollTrigger CDN -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
